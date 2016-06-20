@@ -1,0 +1,1 @@
+create table hosp_proc_measure as select hp.providerID, hp.procedureID, tec.Score as procedureScore, tec.Sample as procedureSamples from hospital_procedure hp join hospital_tec tec where hp.providerID = tec.providerID and hp.procedureID = tec.MeasureID;

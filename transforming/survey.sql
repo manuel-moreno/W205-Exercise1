@@ -1,0 +1,1 @@
+create table survey as select h.providerID, s.HCAHPSBaseScore as providerBase, s.HCAHPSConsistencyScore as providerConsistency from hospital h join hospital_survey s where h.providerID = s.ProviderNumber;

@@ -1,5 +1,5 @@
 DROP TABLE hospital_gi;
-CREATE EXTERNAL TABLE hospital_gi (ProviderID int,HospitalName string,Address string,City string,State string,ZIPCode string,CountyName string,PhoneNumber string,HospitalType string,HospitalOwnership string,EmergencyServices string)
+CREATE EXTERNAL TABLE hospital_gi (providerID int,HospitalName string,Address string,City string,State string,ZIPCode string,CountyName string,PhoneNumber string,HospitalType string,HospitalOwnership string,EmergencyServices string)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES (
 "separatorChar" = ",",
@@ -10,7 +10,7 @@ STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/hospital_gi';
 
 DROP TABLE hospital_tec;
-CREATE EXTERNAL TABLE hospital_tec (ProviderID int,HospitalName string,Address string,City string,State string,ZIPCode string,CountyName string,PhoneNumber string,Condition string,MeasureID string,MeasureName string,Score double,Sample int,Footnote string,MeasureStartDate string,MeasureEndDate string)
+CREATE EXTERNAL TABLE hospital_tec (providerID int,HospitalName string,Address string,City string,State string,ZIPCode string,CountyName string,PhoneNumber string,Condition string,MeasureID string,MeasureName string,Score double,Sample int,Footnote string,MeasureStartDate string,MeasureEndDate string)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES (
 "separatorChar" = ",",
@@ -21,7 +21,7 @@ STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/hospital_tec';
 
 DROP TABLE hospital_rd;
-CREATE EXTERNAL TABLE hospital_rd (ProviderID int,HospitalName string,Address string,City string,State string,ZIPCode string,CountyName string,PhoneNumber string,MeasureName string,MeasureID string,ComparedtoNational string,Denominator int,Score double,LowerEstimate double,HigherEstimate double,Footnote string,MeasureStartDate string,MeasureEndDate string)
+CREATE EXTERNAL TABLE hospital_rd (providerID int,HospitalName string,Address string,City string,State string,ZIPCode string,CountyName string,PhoneNumber string,MeasureName string,MeasureID string,ComparedtoNational string,Denominator int,Score double,LowerEstimate double,HigherEstimate double,Footnote string,MeasureStartDate string,MeasureEndDate string)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES (
 "separatorChar" = ",",

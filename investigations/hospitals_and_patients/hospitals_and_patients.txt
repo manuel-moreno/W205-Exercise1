@@ -1,0 +1,3 @@
+Hospitals are ranked by those with the highest procedures scores and these numbers are comapred to the rank for the hospitals according to the patient surveys
+
+Results did not work due to complexity of query.

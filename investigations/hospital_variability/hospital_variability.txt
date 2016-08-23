@@ -1,0 +1,15 @@
+Hospital variability is determined by looking at the the difference between the average score for procedure and the mean, across all hospitals.
+
+The results are as follows (not sure why the nulls):
+
+ProcedureID			Difference between max and mean
+IMM_3_FAC_ADHPCT    18.319387476073288
+VTE_6   			NULL
+VTE_5   			NULL
+VTE_4   			NULL
+VTE_3   			NULL
+VTE_2   			NULL
+VTE_1   			NULL
+STK_8   			NULL
+STK_6   			NULL
+STK_5   			NULL

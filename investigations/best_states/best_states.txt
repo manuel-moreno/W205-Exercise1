@@ -1,0 +1,15 @@
+The best state is determined by comparing an average procedure score for every hospital and then averaging the scores for all hospitals within the state.
+
+The results are as follows:
+
+State	Avg. Score
+VI      109.52259011236035
+PR      95.70713200845852
+SD      70.79423728181895
+NE      70.40548244539212
+VT      69.03311017524648
+MD      65.06895596171897
+MT      63.82507496064265
+IA      62.200106706360124
+ID      58.97384393835697
+NH      56.52401195866548
